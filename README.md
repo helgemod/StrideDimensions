@@ -6,6 +6,6 @@ https://www.youtube.com/watch?v=DfK83xEtJ_k
 
 Example of use:
 * AI
-** Multidimensional lists in Machine Learning projects.
-** Represent board in games like: Tic-Tac-Toe; Four in a row.
-** Represent Sudoku board.
+  * Multidimensional lists in Machine Learning projects.
+  * Represent board in games like: Tic-Tac-Toe; Four in a row.
+  * Represent Sudoku board.
