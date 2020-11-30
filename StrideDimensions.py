@@ -223,6 +223,12 @@ class StrideDimension:
                 return i
         return None
 
+    def getIndexAtLastOccurrenceOfData(self, inData):
+        for i in range(len(self.theData)-1, -1, -1):
+            if self.theData[i] == inData:
+                return i
+        return None
+
     # Place data directly indexed - Typical use in conjunction with "getIndexAtFirstOccurrenceOfData"
     def setDataAtIndex(self, index, value):
         if index == None or not isinstance(index,int):
@@ -237,10 +243,6 @@ class StrideDimension:
             if self.theData[i]==compareData:
                 retList.append(i)
         return retList
-
-    def getCoordinatesForListIndex(self, index):
-        print("*** STUB *** <getCoordinatesForListIndex>")
-        return 0
 
     # Fill all data in all dimensions with "data"
     def fillData(self,data):
