@@ -237,6 +237,9 @@ class StrideDimension:
             return
         self.theData[index] = value
 
+    def getDataAtIndex(self, index):
+        return self.theData[index]
+
     def getIndexListWhereDataIs(self, compareData):
         retList = []
         for i in range(len(self.theData)):
