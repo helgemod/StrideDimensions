@@ -107,7 +107,7 @@ class StrideDimension:
 
     #Used when restarting a program and read data saved to file.
     #Note, see "getDataForSave" below.
-    def setUpWithData(self,setupDic):
+    def setUpWithData(self, setupDic):
         self.offset = setupDic[self.KEY_OFFSET]
         self.dimensions = setupDic[self.KEY_DIMENSIONS]
         self.strides = setupDic[self.KEY_STRIDES]
@@ -117,7 +117,7 @@ class StrideDimension:
     #To recreate this object -> Create object with init, then call "setUpWithData" with
     #the from file read Dictionary.
     def getDataForSave(self):
-        return  {self.KEY_OFFSET:self.offset,self.KEY_DIMENSIONS:self.dimensions,self.KEY_STRIDES:self.strides,self.KEY_THEDATA:self.theData}
+        return {self.KEY_OFFSET: self.offset, self.KEY_DIMENSIONS: self.dimensions.copy(), self.KEY_STRIDES: self.strides.copy(), self.KEY_THEDATA: self.theData.copy()}
 
     #Set ONE value at coords (on format (2,3,4))
     def setData(self, coords, value):
