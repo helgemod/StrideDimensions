@@ -93,7 +93,7 @@ class StrideDimension:
         for i in range(1, len(inDim)):
             self.strides[i] = self.strides[i-1]*inDim[i-1]
 
-    #For debug reason
+    #For debug reasons
     def print(self):
         print("*"*10)
         print("StrideDimension object")
